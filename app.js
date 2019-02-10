@@ -100,20 +100,28 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-// function multiplyArray(multArr) { //eslint-disable-line
-//   if (multArr instanceof Array){
-  
-//     for (var i = 0; i<multArr.length; i++){
-//       (multiply) *= multArr[i] ;
-//     }
-//   }
-// var message1 = 'The numbers'+ testArray+ 'have a product of'+ multiply + '.';
+problem-5
+//just checking my push request
+function multiplyArray(multArr) { //eslint-disable-line
+  // eslint-disable-next-line no-empty
+  if (multArr instanceof Array) {
+    var getProduct = 1;
 
-// return[multiply,message1];
-// }
+    var messageOne = 'The numbers ';
+    for (var i = 0; i < multArr.length; i++) {
+      getProduct = multiply(getProduct, multArr[i])[0];
+    }
+  }
 
-// // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+  messageOne = messageOne + testArray + ' have a product of ' + getProduct + '.';
+
+  return [getProduct, messageOne];
+}
+
+// Here is the test for multiplyArray(); uncomment it to run it
+testMultiplyArray(testArray);
+
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
