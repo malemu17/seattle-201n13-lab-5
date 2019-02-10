@@ -100,6 +100,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+//just checking my push request
 function multiplyArray(multArr) { //eslint-disable-line
   // eslint-disable-next-line no-empty
   if (multArr instanceof Array) {
