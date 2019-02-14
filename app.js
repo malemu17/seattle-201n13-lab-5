@@ -74,14 +74,16 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
   // eslint-disable-next-line no-empty
+  
   if (sumArr instanceof Array) {
-    var sum = 0;
+    var total = 0;
     for (var i = 0; i < sumArr.length; i++) {
-      sum += (sumArr[i]);
+      total = sum(total,sumArr[i])[0]; 
     }
+    
   }
-  var message = testArray + ' was passed in as an array of numbers, and ' + sum + ' is their sum.';
-  return ([sum, message]);
+  var message = testArray + ' was passed in as an array of numbers, and ' + total + ' is their sum.';
+  return ([total, message]);
 }
 
 // Here is the test for sumArray(); uncomment it to run it
